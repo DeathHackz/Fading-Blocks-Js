@@ -1,0 +1,158 @@
+body {
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+}
+
+.red-box {
+  background-color: red;
+  margin-right: 100px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 10px;
+  float: right;
+  display: none;
+}
+
+.blue-box {
+  background-color: blue;
+  margin-left: 150px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 10px;
+  float: left;
+  display: none;
+}
+
+.reset {
+  text-align: center;
+  display: none;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.button-one {
+  transition-duration: 0.4s;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  background: #ff4d4d;
+}
+
+.button-one:hover {
+  background-color: red;
+  color: white;
+}
+
+.tooltip-one {
+  font-family: calibri;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  background: #ff4d4d;
+  margin-left: 28px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  width:200px;
+  height:60px;
+}
+
+.reset:hover .tooltip-one {
+  display: block;
+}
+
+.toggle {
+  text-align: center;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.button-two {
+  transition-duration: 0.4s;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  background: #4d4dff;
+  color: aqua;
+}
+
+.button-two:hover {
+  background-color: blue;
+  color: white;
+}
+
+.tooltip-two {
+  font-family: calibri;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  background: #4d4dff;
+  margin-left: 28px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  width:200px;
+  height:60px;
+}
+
+.toggle:hover .tooltip-two {
+  display: block;
+}
+
+.stop {
+  text-align: center;
+  display: none;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.button-three {
+  transition-duration: 0.4s;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  background: #85e085;
+  margin-bottom: 10px;
+}
+
+.button-three:hover {
+  background-color: #33cc33;
+  color: white;
+}
+
+.tooltip-three {
+  font-family: calibri;
+  border-radius: 10px;
+  color: white;
+  display: none;
+  background: #85e085;
+  margin-left: 28px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  width:200px;
+  height:20px;
+}
+
+.stop:hover .tooltip-three {
+  display: block;
+}
+
+.text {
+  text-align: center;
+  font-family: calibri;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+}
+
+.stop-moving {
+  vertical-align: top
+  position:relative;
+  width: 100%;
+  height: 200px;
+}
