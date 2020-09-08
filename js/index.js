@@ -1,56 +1,32 @@
-// Red Box Js
-$(".red-box").hover(function(){
-  $(this).fadeOut(100);
-  $(".blue-box").fadeIn(100);
-  console.log("User hovered over red box");
-  console.log("Blue Box is now visible");
-  console.log("-------------------------------");
-});
-//Blue Box Js
-$(".blue-box").hover(function(){
-  $(".red-box").fadeIn(100);
-  $(this).fadeOut(100);
-  console.log("User hovered over blue box");
-  console.log("Red Box is now visible");
-  console.log("-------------------------------");
-});
-//Reset Button Js
-$(".button-one").click(function(){
-  $(".red-box").fadeOut(1000);
-  $(".blue-box").fadeIn(1000);
-  alert("Boxes & console log have been reset");
-  console.clear()
-  console.log("User has reset the project and console");
-  console.log("-------------------------------");
-});
-//Start Button Js
-$(".button-two").click(function(){
-  $(".blue-box").fadeIn(1000);
-  $(".reset").fadeIn(1000);
-  $(".stop").fadeIn(1000);
-  $(this).hide();
-  $(".button-three").fadeIn(1000);
-  console.log("User has started the project");
-  console.log("-------------------------------");
-});
-//Stop Button Js
-$(".button-three").click(function(){
-  $(".red-box").fadeOut(1000);
-  $(".blue-box").fadeOut(1000);
-  $(".reset").hide();
-  $(".button-two").fadeIn(1000);
-  $(this).hide();
-  console.log("User has stopped the project");
-  console.log("-------------------------------");
+const redBlock = document.querySelector(".red.block");
+const blueBlock = document.querySelector(".blue.block");
+const startBtn = document.querySelector(".start.btn");
+const stopBtn = document.querySelector(".stop.btn");
+
+redBlock.addEventListener("mouseover", () => {
+  if (+redBlock.style.opacity) {
+    redBlock.style.opacity = 0;
+    blueBlock.style.opacity = 1;
+  }
 });
 
-var tooltip = document.querySelectorAll('.tooltip-one,.tooltip-two,.tooltip-three');
+blueBlock.addEventListener("mouseover", () => {
+  if (+blueBlock.style.opacity) {
+    blueBlock.style.opacity = 0;
+    redBlock.style.opacity = 1;
+  }
+});
 
-document.addEventListener('mousemove', fn, false);
+startBtn.addEventListener("click", () => {
+  startBtn.style.opacity = 0;
+  stopBtn.style.opacity = 1;
+  redBlock.style.opacity = 1;
+  blueBlock.style.opacity = 0;
+});
 
-function fn(e) {
-    for (var i=tooltip.length; i--;) {
-        tooltip[i].style.left = e.pageX + 'px';
-        tooltip[i].style.top = e.pageY + 'px';
-    }
-}
+stopBtn.addEventListener("click", () => {
+  stopBtn.style.opacity = 0;
+  startBtn.style.opacity = 1;
+  redBlock.style.opacity = 0;
+  blueBlock.style.opacity = 0;
+});

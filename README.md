@@ -1,5 +1,8 @@
-# Fading Blocks Javascript Test
+# Fading Blocks With Javascript
 
-This is a js test
+Make blocks fade in and out on hover, all done with Vanilla Javascript!
 
-Check it out - [https://deathhackz.github.io/Fading-Blocks-Js/](https://deathhackz.github.io/Fading-Blocks-Js/)
+Check it out - [https://kabankz.github.io/Fading-Blocks-Js/](https://kabankz.github.io/Fading-Blocks-Js/)
+
+---
+Sep 2020 Update - Re-Written for fun
